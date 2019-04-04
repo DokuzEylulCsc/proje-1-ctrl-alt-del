@@ -14,6 +14,7 @@ namespace kelimelik
         public Form1()
         {
             InitializeComponent();
+          
         }
     }
 }
