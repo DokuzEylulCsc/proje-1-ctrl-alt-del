@@ -72,6 +72,7 @@
             this.Btn_Kolay.TabIndex = 3;
             this.Btn_Kolay.Text = "Kolay";
             this.Btn_Kolay.UseVisualStyleBackColor = false;
+            this.Btn_Kolay.Click += new System.EventHandler(this.Btn_Kolay_Click);
             // 
             // Btn_Orta
             // 
@@ -81,6 +82,7 @@
             this.Btn_Orta.TabIndex = 4;
             this.Btn_Orta.Text = "Orta";
             this.Btn_Orta.UseVisualStyleBackColor = true;
+            this.Btn_Orta.Click += new System.EventHandler(this.Btn_Orta_Click);
             // 
             // Btn_Zor
             // 
@@ -90,6 +92,7 @@
             this.Btn_Zor.TabIndex = 5;
             this.Btn_Zor.Text = "Zor";
             this.Btn_Zor.UseVisualStyleBackColor = true;
+            this.Btn_Zor.Click += new System.EventHandler(this.Btn_Zor_Click);
             // 
             // label2
             // 

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.Txt_Kelime = new System.Windows.Forms.TextBox();
             this.listBox12 = new System.Windows.Forms.ListBox();
@@ -75,6 +76,11 @@
             this.label11 = new System.Windows.Forms.Label();
             this.button32 = new System.Windows.Forms.Button();
             this.button33 = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label2 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -108,9 +114,9 @@
             this.can.AutoSize = true;
             this.can.Location = new System.Drawing.Point(141, 37);
             this.can.Name = "can";
-            this.can.Size = new System.Drawing.Size(18, 18);
+            this.can.Size = new System.Drawing.Size(28, 18);
             this.can.TabIndex = 3;
-            this.can.Text = "0";
+            this.can.Text = "25";
             // 
             // label3
             // 
@@ -124,11 +130,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(361, 37);
+            this.label4.Location = new System.Drawing.Point(354, 37);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 18);
+            this.label4.Size = new System.Drawing.Size(18, 18);
             this.label4.TabIndex = 5;
-            this.label4.Text = "00.00";
+            this.label4.Text = "6";
             // 
             // label5
             // 
@@ -146,7 +152,7 @@
             this.pas.Name = "pas";
             this.pas.Size = new System.Drawing.Size(18, 18);
             this.pas.TabIndex = 7;
-            this.pas.Text = "0";
+            this.pas.Text = "5";
             // 
             // label7
             // 
@@ -492,12 +498,54 @@
             // 
             // button33
             // 
-            this.button33.Location = new System.Drawing.Point(97, 179);
+            this.button33.Location = new System.Drawing.Point(45, 182);
             this.button33.Name = "button33";
             this.button33.Size = new System.Drawing.Size(85, 37);
             this.button33.TabIndex = 46;
             this.button33.Text = "Gir";
             this.button33.UseVisualStyleBackColor = true;
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(398, 37);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(28, 18);
+            this.label2.TabIndex = 47;
+            this.label2.Text = "59";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(378, 37);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(14, 18);
+            this.label6.TabIndex = 48;
+            this.label6.Text = ":";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(136, 182);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(85, 37);
+            this.button1.TabIndex = 49;
+            this.button1.Text = "Pas";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(227, 182);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(85, 37);
+            this.button2.TabIndex = 50;
+            this.button2.Text = "Çıkış";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form2
             // 
@@ -505,6 +553,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(765, 461);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.button33);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.button32);
@@ -556,6 +608,7 @@
             this.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.Name = "Form2";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -610,5 +663,10 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button button32;
         private System.Windows.Forms.Button button33;
+        internal System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

@@ -113,7 +113,7 @@ namespace kelimelik
                 if(temp[0] == '!')
                 {
                     a = Convert.ToInt32(temp.Split(' ')[1]);
-                    bilinenKelimeler[a - 2]++;
+                  //  bilinenKelimeler[a - 2]++;
                 }
             }
         }//bilinen kelimeleri agirliklarina gore atar
