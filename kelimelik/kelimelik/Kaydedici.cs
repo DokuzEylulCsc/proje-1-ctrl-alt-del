@@ -5,23 +5,28 @@ namespace kelimelik
 {
     class Kaydedici
     {
-        static private string name="PlaceHolder";
-        static private string path = @"..\" + name + "-Log.txt";
+        static private string name = "PlaceHolder";
+        public static string N{ set => name = value; }
+        static private string path;
         static private int[] bilinenKelimeler = {0,0,0,0,0,0,0,0,0,0,0};//0.indis 2 harfliler 10.indis 12 harflilerden bilinenler
-        static private FileStream fs = new FileStream(
-            path,
-            FileMode.OpenOrCreate,   
-            FileAccess.ReadWrite); //okunabilir ve yazilabilir.
-        static private StreamWriter sw = new StreamWriter(fs);
-        static private StreamReader sr = new StreamReader(fs);
+        static private FileStream fs;
+        static private StreamWriter sw;
+        static private StreamReader sr;
 
         public static int[] BilinenKelimeler { get => bilinenKelimeler; }
         public static void LogYaz()
         {
+            path = @"..\" + name + "-Log.txt";
+            fs = new FileStream(
+            path,
+            FileMode.OpenOrCreate,
+            FileAccess.ReadWrite); //okunabilir ve yazilabilir.
+            sw = new StreamWriter(fs);
+            sr = new StreamReader(fs);
             EoF();
             sw.WriteLine("* Yeni Oyuna Baslandi *");
             sw.Flush();
-        }//her oyun basinda yapilicak 
+        }//her oyun basinda yapilicak // yeniden oyna dendiginde de bu method cagirilacak ! 
         public static void LogYaz(int kacinciKelime , int KacTahmindeBildi , int KelimeKacHarfli, string zorlukSeviyesi)//bilinen kelimeler icin
         {
             EoF();

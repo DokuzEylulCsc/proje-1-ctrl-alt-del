@@ -61,6 +61,7 @@
             this.Btn_YeniOyun.TabIndex = 2;
             this.Btn_YeniOyun.Text = "Yeni Oyun";
             this.Btn_YeniOyun.UseVisualStyleBackColor = true;
+            this.Btn_YeniOyun.Click += new System.EventHandler(this.Btn_YeniOyun_Click);
             // 
             // Btn_Kolay
             // 
