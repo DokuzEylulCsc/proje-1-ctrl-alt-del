@@ -7,6 +7,7 @@ namespace kelimelik
 {
     class Tur
     {
+        // Bu bolumde sozlugumuzu olusturduk.
         Sozcuk[] kolay =
         {
             new Sozcuk("at"),new Sozcuk("in"),new Sozcuk("yol"),new Sozcuk("pul"),new Sozcuk("bul"),new Sozcuk("dik"),new Sozcuk("yan"),new Sozcuk("dar"),new Sozcuk("düz"),new Sozcuk("git"),new Sozcuk("gel"),
@@ -32,6 +33,8 @@ namespace kelimelik
             new Sozcuk("çakmaktaşı")
         };
 
-
+        public Sozcuk[] Zor { get => zor; set => zor = value; }
+        public Sozcuk[] Orta { get => orta; set => orta = value; }
+        public Sozcuk[] Kolay { get => kolay; set => kolay = value; }
     }
 }
