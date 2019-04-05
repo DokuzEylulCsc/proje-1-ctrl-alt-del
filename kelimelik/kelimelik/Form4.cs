@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace kelimelik
 {
-    public partial class Form1 : System.Windows.Forms.Form
+    public partial class Form4 : Form
     {
-        public Form1()
+        public Form4()
         {
             InitializeComponent();
         }
