@@ -83,18 +83,12 @@ namespace kelimelik
                 }
             }
         }
-
         public static void OyunBitir()
         {
             Form3 f3 = new Form3();
             f3.Show();
             f2.Close();
         }
-
-
-
-
-
         // AI da ki metodu burada cagırıp f2 gonderıcez metoda.
 
     }

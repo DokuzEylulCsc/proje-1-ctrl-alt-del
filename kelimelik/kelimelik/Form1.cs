@@ -24,8 +24,7 @@ namespace kelimelik
             Oyuncu o = new Oyuncu(textBox1.Text, f2);
             Oyun o2 = new Oyun(f2);
             o2.OyunBaslat();
-            this.Hide();
-            
+            this.Hide();   
         }
 
         private void Btn_Kolay_Click(object sender, EventArgs e)
