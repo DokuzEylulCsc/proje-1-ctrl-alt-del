@@ -8,7 +8,7 @@ namespace kelimelik
         static private string name = "PlaceHolder";
         public static string N{ set => name = value; }
         static private string path;
-        static private int[] bilinenKelimeler = {0,0,0,0,0,0,0,0,0,0,0};//0.indis 2 harfliler 10.indis 12 harflilerden bilinenler
+       // static private int[] bilinenKelimeler = {0,0,0,0,0,0,0,0,0,0,0};//0.indis 2 harfliler 10.indis 12 harflilerden bilinenler
         static private FileStream fs;
         static private StreamWriter sw;
         static private StreamReader sr;
