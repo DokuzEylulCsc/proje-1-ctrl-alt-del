@@ -12,8 +12,6 @@ namespace kelimelik
         static private FileStream fs;
         static private StreamWriter sw;
         static private StreamReader sr;
-
-        public static int[] BilinenKelimeler { get => bilinenKelimeler; }
         public static void LogYaz()
         {
             path = @"..\" + name + "-Log.txt";

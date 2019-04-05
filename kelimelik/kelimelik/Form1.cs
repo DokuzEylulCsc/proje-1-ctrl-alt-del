@@ -21,6 +21,7 @@ namespace kelimelik
             Form2 f2 = new Form2();
             Oyuncu o = new Oyuncu(textBox1.Text, f2);
             f2.Show();
+            
         }
     }
 }

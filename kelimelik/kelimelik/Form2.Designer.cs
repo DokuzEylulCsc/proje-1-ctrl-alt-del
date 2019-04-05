@@ -30,26 +30,26 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.Txt_Kelime = new System.Windows.Forms.TextBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.listBox12 = new System.Windows.Forms.ListBox();
+            this.can = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.pas = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.Txt_Tahmin = new System.Windows.Forms.TextBox();
             this.a = new System.Windows.Forms.Button();
             this.b = new System.Windows.Forms.Button();
             this.c = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.c1 = new System.Windows.Forms.Button();
             this.d = new System.Windows.Forms.Button();
             this.e = new System.Windows.Forms.Button();
             this.f = new System.Windows.Forms.Button();
             this.g = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
+            this.g1 = new System.Windows.Forms.Button();
             this.h = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
+            this.i1 = new System.Windows.Forms.Button();
             this.i = new System.Windows.Forms.Button();
             this.j = new System.Windows.Forms.Button();
             this.k = new System.Windows.Forms.Button();
@@ -57,14 +57,14 @@
             this.m = new System.Windows.Forms.Button();
             this.n = new System.Windows.Forms.Button();
             this.o = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
+            this.o1 = new System.Windows.Forms.Button();
             this.p = new System.Windows.Forms.Button();
             this.r = new System.Windows.Forms.Button();
             this.s = new System.Windows.Forms.Button();
-            this.button23 = new System.Windows.Forms.Button();
+            this.s1 = new System.Windows.Forms.Button();
             this.t = new System.Windows.Forms.Button();
             this.u = new System.Windows.Forms.Button();
-            this.button26 = new System.Windows.Forms.Button();
+            this.u1 = new System.Windows.Forms.Button();
             this.v = new System.Windows.Forms.Button();
             this.y = new System.Windows.Forms.Button();
             this.z = new System.Windows.Forms.Button();
@@ -94,23 +94,23 @@
             this.Txt_Kelime.TabIndex = 1;
             this.Txt_Kelime.UseSystemPasswordChar = true;
             // 
-            // listBox1
+            // listBox12
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 18;
-            this.listBox1.Location = new System.Drawing.Point(330, 83);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(324, 112);
-            this.listBox1.TabIndex = 2;
+            this.listBox12.FormattingEnabled = true;
+            this.listBox12.ItemHeight = 18;
+            this.listBox12.Location = new System.Drawing.Point(330, 83);
+            this.listBox12.Name = "listBox12";
+            this.listBox12.Size = new System.Drawing.Size(324, 112);
+            this.listBox12.TabIndex = 2;
             // 
-            // label2
+            // can
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(141, 37);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(18, 18);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "0";
+            this.can.AutoSize = true;
+            this.can.Location = new System.Drawing.Point(141, 37);
+            this.can.Name = "can";
+            this.can.Size = new System.Drawing.Size(18, 18);
+            this.can.TabIndex = 3;
+            this.can.Text = "0";
             // 
             // label3
             // 
@@ -139,14 +139,14 @@
             this.label5.TabIndex = 6;
             this.label5.Text = "Pas :";
             // 
-            // label6
+            // pas
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(577, 37);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(18, 18);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "0";
+            this.pas.AutoSize = true;
+            this.pas.Location = new System.Drawing.Point(577, 37);
+            this.pas.Name = "pas";
+            this.pas.Size = new System.Drawing.Size(18, 18);
+            this.pas.TabIndex = 7;
+            this.pas.Text = "0";
             // 
             // label7
             // 
@@ -201,14 +201,14 @@
             this.c.Text = "C";
             this.c.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // c1
             // 
-            this.button4.Location = new System.Drawing.Point(220, 235);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(49, 42);
-            this.button4.TabIndex = 14;
-            this.button4.Text = "Ç";
-            this.button4.UseVisualStyleBackColor = true;
+            this.c1.Location = new System.Drawing.Point(220, 235);
+            this.c1.Name = "c1";
+            this.c1.Size = new System.Drawing.Size(49, 42);
+            this.c1.TabIndex = 14;
+            this.c1.Text = "Ç";
+            this.c1.UseVisualStyleBackColor = true;
             // 
             // d
             // 
@@ -246,14 +246,15 @@
             this.g.Text = "G";
             this.g.UseVisualStyleBackColor = true;
             // 
-            // button9
+            // g1
             // 
-            this.button9.Location = new System.Drawing.Point(495, 235);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(49, 42);
-            this.button9.TabIndex = 19;
-            this.button9.Text = "Ğ";
-            this.button9.UseVisualStyleBackColor = true;
+            this.g1.Location = new System.Drawing.Point(495, 235);
+            this.g1.Name = "g1";
+            this.g1.Size = new System.Drawing.Size(49, 42);
+            this.g1.TabIndex = 19;
+            this.g1.Text = "Ğ";
+            this.g1.UseVisualStyleBackColor = true;
+            this.g1.Click += new System.EventHandler(this.button9_Click);
             // 
             // h
             // 
@@ -264,14 +265,14 @@
             this.h.Text = "H";
             this.h.UseVisualStyleBackColor = true;
             // 
-            // button11
+            // i1
             // 
-            this.button11.Location = new System.Drawing.Point(605, 235);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(49, 42);
-            this.button11.TabIndex = 21;
-            this.button11.Text = "I";
-            this.button11.UseVisualStyleBackColor = true;
+            this.i1.Location = new System.Drawing.Point(605, 235);
+            this.i1.Name = "i1";
+            this.i1.Size = new System.Drawing.Size(49, 42);
+            this.i1.TabIndex = 21;
+            this.i1.Text = "I";
+            this.i1.UseVisualStyleBackColor = true;
             // 
             // i
             // 
@@ -336,14 +337,14 @@
             this.o.Text = "O";
             this.o.UseVisualStyleBackColor = true;
             // 
-            // button19
+            // o1
             // 
-            this.button19.Location = new System.Drawing.Point(385, 293);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(49, 42);
-            this.button19.TabIndex = 29;
-            this.button19.Text = "Ö";
-            this.button19.UseVisualStyleBackColor = true;
+            this.o1.Location = new System.Drawing.Point(385, 293);
+            this.o1.Name = "o1";
+            this.o1.Size = new System.Drawing.Size(49, 42);
+            this.o1.TabIndex = 29;
+            this.o1.Text = "Ö";
+            this.o1.UseVisualStyleBackColor = true;
             // 
             // p
             // 
@@ -372,14 +373,14 @@
             this.s.Text = "S";
             this.s.UseVisualStyleBackColor = true;
             // 
-            // button23
+            // s1
             // 
-            this.button23.Location = new System.Drawing.Point(605, 293);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(49, 42);
-            this.button23.TabIndex = 33;
-            this.button23.Text = "Ş";
-            this.button23.UseVisualStyleBackColor = true;
+            this.s1.Location = new System.Drawing.Point(605, 293);
+            this.s1.Name = "s1";
+            this.s1.Size = new System.Drawing.Size(49, 42);
+            this.s1.TabIndex = 33;
+            this.s1.Text = "Ş";
+            this.s1.UseVisualStyleBackColor = true;
             // 
             // t
             // 
@@ -399,14 +400,14 @@
             this.u.Text = "U";
             this.u.UseVisualStyleBackColor = true;
             // 
-            // button26
+            // u1
             // 
-            this.button26.Location = new System.Drawing.Point(302, 341);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(49, 42);
-            this.button26.TabIndex = 36;
-            this.button26.Text = "Ü";
-            this.button26.UseVisualStyleBackColor = true;
+            this.u1.Location = new System.Drawing.Point(302, 341);
+            this.u1.Name = "u1";
+            this.u1.Size = new System.Drawing.Size(49, 42);
+            this.u1.TabIndex = 36;
+            this.u1.Text = "Ü";
+            this.u1.UseVisualStyleBackColor = true;
             // 
             // v
             // 
@@ -514,14 +515,14 @@
             this.Controls.Add(this.z);
             this.Controls.Add(this.y);
             this.Controls.Add(this.v);
-            this.Controls.Add(this.button26);
+            this.Controls.Add(this.u1);
             this.Controls.Add(this.u);
             this.Controls.Add(this.t);
-            this.Controls.Add(this.button23);
+            this.Controls.Add(this.s1);
             this.Controls.Add(this.s);
             this.Controls.Add(this.r);
             this.Controls.Add(this.p);
-            this.Controls.Add(this.button19);
+            this.Controls.Add(this.o1);
             this.Controls.Add(this.o);
             this.Controls.Add(this.n);
             this.Controls.Add(this.m);
@@ -529,26 +530,26 @@
             this.Controls.Add(this.k);
             this.Controls.Add(this.j);
             this.Controls.Add(this.i);
-            this.Controls.Add(this.button11);
+            this.Controls.Add(this.i1);
             this.Controls.Add(this.h);
-            this.Controls.Add(this.button9);
+            this.Controls.Add(this.g1);
             this.Controls.Add(this.g);
             this.Controls.Add(this.f);
             this.Controls.Add(this.e);
             this.Controls.Add(this.d);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.c1);
             this.Controls.Add(this.c);
             this.Controls.Add(this.b);
             this.Controls.Add(this.a);
             this.Controls.Add(this.Txt_Tahmin);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.pas);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.can);
+            this.Controls.Add(this.listBox12);
             this.Controls.Add(this.Txt_Kelime);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -564,26 +565,26 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox Txt_Kelime;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ListBox listBox12;
+        private System.Windows.Forms.Label can;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label pas;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox Txt_Tahmin;
         private System.Windows.Forms.Button a;
         private System.Windows.Forms.Button b;
         private System.Windows.Forms.Button c;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button c1;
         private System.Windows.Forms.Button d;
         private System.Windows.Forms.Button e;
         private System.Windows.Forms.Button f;
         private System.Windows.Forms.Button g;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button g1;
         private System.Windows.Forms.Button h;
-        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button i1;
         private System.Windows.Forms.Button i;
         private System.Windows.Forms.Button j;
         private System.Windows.Forms.Button k;
@@ -591,14 +592,14 @@
         private System.Windows.Forms.Button m;
         private System.Windows.Forms.Button n;
         private System.Windows.Forms.Button o;
-        private System.Windows.Forms.Button button19;
+        private System.Windows.Forms.Button o1;
         private System.Windows.Forms.Button p;
         private System.Windows.Forms.Button r;
         private System.Windows.Forms.Button s;
-        private System.Windows.Forms.Button button23;
+        private System.Windows.Forms.Button s1;
         private System.Windows.Forms.Button t;
         private System.Windows.Forms.Button u;
-        private System.Windows.Forms.Button button26;
+        private System.Windows.Forms.Button u1;
         private System.Windows.Forms.Button v;
         private System.Windows.Forms.Button y;
         private System.Windows.Forms.Button z;

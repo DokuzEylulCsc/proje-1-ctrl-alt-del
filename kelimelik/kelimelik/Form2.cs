@@ -16,6 +16,9 @@ namespace kelimelik
             InitializeComponent();
         }
 
-       
+        private void button9_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
