@@ -15,5 +15,12 @@ namespace kelimelik
         {
             InitializeComponent();
         }
+
+        private void Btn_YeniOyun_Click(object sender, EventArgs e)
+        {
+            Form2 f2 = new Form2();
+            Oyuncu o = new Oyuncu(textBox1.Text, f2);
+            f2.Show();
+        }
     }
 }
