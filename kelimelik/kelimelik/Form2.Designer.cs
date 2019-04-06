@@ -97,6 +97,7 @@
             // 
             // Txt_Kelime
             // 
+            this.Txt_Kelime.Enabled = false;
             this.Txt_Kelime.Location = new System.Drawing.Point(144, 107);
             this.Txt_Kelime.Name = "Txt_Kelime";
             this.Txt_Kelime.Size = new System.Drawing.Size(168, 26);

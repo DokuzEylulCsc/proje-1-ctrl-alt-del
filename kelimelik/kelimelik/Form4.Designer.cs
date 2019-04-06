@@ -34,7 +34,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -43,7 +42,6 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
@@ -105,21 +103,11 @@
             this.label6.TabIndex = 4;
             this.label6.Text = "Pas Sayısı :";
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.label7.Location = new System.Drawing.Point(23, 279);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(214, 18);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Ortalama Oyun Surenız :";
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.label8.Location = new System.Drawing.Point(23, 321);
+            this.label8.Location = new System.Drawing.Point(23, 287);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(201, 18);
             this.label8.TabIndex = 7;
@@ -128,7 +116,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(43, 405);
+            this.label9.Location = new System.Drawing.Point(43, 371);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(140, 18);
             this.label9.TabIndex = 10;
@@ -137,7 +125,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(43, 376);
+            this.label10.Location = new System.Drawing.Point(43, 342);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(137, 18);
             this.label10.TabIndex = 9;
@@ -146,7 +134,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(43, 349);
+            this.label11.Location = new System.Drawing.Point(43, 315);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(100, 18);
             this.label11.TabIndex = 8;
@@ -192,21 +180,11 @@
             this.label15.TabIndex = 14;
             this.label15.Text = "label15";
             // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label16.Location = new System.Drawing.Point(243, 279);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(68, 18);
-            this.label16.TabIndex = 15;
-            this.label16.Text = "label16";
-            // 
             // label17
             // 
             this.label17.AutoSize = true;
             this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label17.Location = new System.Drawing.Point(202, 349);
+            this.label17.Location = new System.Drawing.Point(202, 315);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(68, 18);
             this.label17.TabIndex = 16;
@@ -216,7 +194,7 @@
             // 
             this.label18.AutoSize = true;
             this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label18.Location = new System.Drawing.Point(202, 376);
+            this.label18.Location = new System.Drawing.Point(202, 342);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(68, 18);
             this.label18.TabIndex = 17;
@@ -226,7 +204,7 @@
             // 
             this.label19.AutoSize = true;
             this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label19.Location = new System.Drawing.Point(202, 405);
+            this.label19.Location = new System.Drawing.Point(202, 371);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(68, 18);
             this.label19.TabIndex = 18;
@@ -237,11 +215,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(163)))), ((int)(((byte)(206)))));
-            this.ClientSize = new System.Drawing.Size(332, 482);
+            this.ClientSize = new System.Drawing.Size(332, 423);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.label17);
-            this.Controls.Add(this.label16);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
@@ -250,7 +227,6 @@
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
@@ -275,7 +251,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
@@ -284,7 +259,6 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;

@@ -7,43 +7,32 @@ namespace kelimelik
     {
         static private string name = "PlaceHolder";
         public static string N{ set => name = value; get => name; }
+        public static int PasSayisi { get => pasSayisi; set => pasSayisi = value; }
+        public static int TahminSayisi { get => tahminSayisi; set => tahminSayisi = value; }
+        public static int BilinenKelimeSayisi { get => bilinenKelimeSayisi; set => bilinenKelimeSayisi = value; }
+        public static string Zorluk { get => zorluk; set => zorluk = value; }
+
+        private static string zorluk = "";
         static private string path;
-       // static private int[] bilinenKelimeler = {0,0,0,0,0,0,0,0,0,0,0};//0.indis 2 harfliler 10.indis 12 harflilerden bilinenler
+        private static int pasSayisi=0;
+        private static int tahminSayisi=0;
+        private static int bilinenKelimeSayisi = 0;
+   
         static private FileStream fs;
         static private StreamWriter sw;
         static private StreamReader sr;
         public static void LogYaz()
         {
-            path = @"..\" + name + "-Log.txt";
-            fs = new FileStream(
-            path,
-            FileMode.OpenOrCreate,
-            FileAccess.ReadWrite); //okunabilir ve yazilabilir.
-            sw = new StreamWriter(fs);
-            sr = new StreamReader(fs);
-            EoF();
+            StreamAc();
             sw.WriteLine("* Yeni Oyuna Baslandi *");
             sw.Flush();
         }//her oyun basinda yapilicak // yeniden oyna dendiginde de bu method cagirilacak ! 
         public static void LogYaz(int kacinciKelime , int KacTahmindeBildi , int KelimeKacHarfli, string zorlukSeviyesi)//bilinen kelimeler icin
         {
             EoF();
-            sw.WriteLine("! "+KelimeKacHarfli.ToString()+" Harfli "+zorlukSeviyesi+ " zorluktaki " +kacinciKelime.ToString()+".Kelime "+KacTahmindeBildi.ToString()+" Tahminde Bilindi");
-            sw.WriteLine("");
+            sw.WriteLine("! "+KelimeKacHarfli.ToString()+" Harfli "+zorluk+ " zorluktaki " +kacinciKelime.ToString()+".Kelime "+KacTahmindeBildi.ToString()+" Tahminde Bilindi");
             sw.Flush();
         }
-        public static void LogYaz(int kacinciKelime,string ZorlukSeviyesi)//pas gecilen kelimeler icin 
-        {
-            EoF();
-            sw.WriteLine(ZorlukSeviyesi + "" + kacinciKelime + ".Kelime pas gecildi");
-            sw.Flush();
-        }
-        public static void LogYaz(int ToplamTahminSayisi)// oyun sonuna kadar yapilan tahmin sayisi
-        {
-            EoF();
-            sw.WriteLine("& "+ToplamTahminSayisi.ToString() + " tahminde oyun bitirildi ");
-            sw.Flush();
-        }//butun oyun boyunca yapilan tahmin sayisi 
         public static void LogYaz(string a)
         {
             sw.WriteLine(a);
@@ -108,25 +97,43 @@ namespace kelimelik
             }
             return bilinenKelimeSayisi;
         }//oynanan butun oyunlardaki bilinen kelime sayisini dondurur
-        public static void ToplamdaHarfSayisinaGoreBilinenKelimeler()
+        public static int ToplamPasSayisi()
         {
             SoF();
-            int a;
+            int sayac = 0;
             string temp = sr.ReadLine();
             while(temp != null)
             {
-                if(temp[0] == '!')
+                if(temp[0] == 'P')
                 {
-                    a = Convert.ToInt32(temp.Split(' ')[1]);
-                  //  bilinenKelimeler[a - 2]++;
+                    sayac++;
                 }
+                temp = sr.ReadLine();
             }
-        }//bilinen kelimeleri agirliklarina gore atar
+            return sayac;
+        }
+
+        public static int ToplamTahminSayisi()
+        {
+            SoF();
+            int sayac = 0;
+            string temp = sr.ReadLine();
+            while(temp != null)
+            {
+                if (temp[0] == '-')
+                {
+                    sayac++;
+                }
+                temp = sr.ReadLine();
+            }
+            return sayac;
+        }
         public static void StreamKapat()
         {
             sw.Close();
             sr.Close();
         }
+        
 
         public static void EoF()
         {
@@ -136,6 +143,17 @@ namespace kelimelik
         {
             fs.Seek(0, SeekOrigin.Begin);
         }//Start of file methodu
+        public static void StreamAc()
+        {
+            path = @"..\" + name + "-Log.txt";
+            fs = new FileStream(
+            path,
+            FileMode.OpenOrCreate,
+            FileAccess.ReadWrite); //okunabilir ve yazilabilir.
+            sw = new StreamWriter(fs);
+            sr = new StreamReader(fs);
+            EoF();
+        }
     }
 
 }

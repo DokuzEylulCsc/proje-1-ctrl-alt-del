@@ -29,14 +29,17 @@ namespace kelimelik
             if (Form1.hangi_buton == 1)
             {
                 secilen_seviye = t.Kolay;
+                Kaydedici.Zorluk = "Kolay";
             }
             else if (Form1.hangi_buton == 2)
             {
                 secilen_seviye = t.Orta;
+                Kaydedici.Zorluk = "Orta";
             }
             else if (Form1.hangi_buton == 3)
             {
                 secilen_seviye = t.Zor;
+                Kaydedici.Zorluk = "Zor";
             }
             Random rastgele = new Random();
             int sayi = 0; 

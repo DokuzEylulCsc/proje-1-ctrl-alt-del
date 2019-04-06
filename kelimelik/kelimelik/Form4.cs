@@ -18,9 +18,15 @@ namespace kelimelik
 
         private void Form4_Load(object sender, EventArgs e)
         {
-            label12.Text = Kaydedici.ToplamOyunSayisi().ToString();
-            label13.Text =
-            label14.Text = Kaydedici.ToplamBilinenKelime().ToString();
+            Kaydedici.LogYaz();
+             label12.Text = Kaydedici.ToplamOyunSayisi().ToString();
+             label13.Text = Kaydedici.ToplamTahminSayisi().ToString();
+             label14.Text = Kaydedici.ToplamBilinenKelime().ToString();
+             label15.Text = Kaydedici.ToplamPasSayisi().ToString();
+             label17.Text = Kaydedici.PasSayisi.ToString();
+             label18.Text = Kaydedici.TahminSayisi.ToString();
+             label19.Text = Kaydedici.BilinenKelimeSayisi.ToString();
+            
         }
     }
 }

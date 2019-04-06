@@ -52,6 +52,7 @@ namespace kelimelik
                 }
                 if (AI.DogruKelimeKarsilastir(GirilenKelime,KacinciKelime))// AI ya gonderilen kelime Mevcut kelime ile uyusuyorsa
                 {
+                    Kaydedici.BilinenKelimeSayisi++;
                     KelimelikTahminSayisi++;
                     ToplamTahminSayisi++;
                     Kaydedici.LogYaz(KacinciKelime, KelimelikTahminSayisi, mevcutKelime.Length, zorluk);
@@ -60,10 +61,12 @@ namespace kelimelik
                     f2.Controls["Txt_Tahmin"].Text = "";
                     ((ListBox)f2.Controls["listBox12"]).Items.Clear();
                     YeniKelimeGetir();
+                    Kaydedici.LogYaz("-Tahmin Yapildi");
 
                 }
                 else// uyusmuyorsa
                 {
+                    Kaydedici.TahminSayisi++;
                     int can = Convert.ToInt32(f2.Controls["can"].Text);
                     can--;
                     f2.Controls["can"].Text = can.ToString();
@@ -156,6 +159,7 @@ namespace kelimelik
                         ((Button)(f2.Controls[harfler[2][i]])).BackColor = Color.Green;
                     }   // Dogru yer dogru kelimeler kontrolu
                     ((ListBox)f2.Controls["listBox12"]).Items.Add(GirilenKelime);
+                    Kaydedici.LogYaz("-Tahmin Yapildi");
                 }
             }
             catch (Exception hata)
@@ -178,6 +182,7 @@ namespace kelimelik
                 f2.Controls["pas"].Text = a.ToString();
                 YeniKelimeGetir();
                 Kaydedici.LogYaz("Pas Gecildi");
+                Kaydedici.PasSayisi++;
             }
             else
             {

@@ -26,9 +26,10 @@ namespace kelimelik
 
         private void Btn_Bitir_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            
             Form4 f4 = new Form4();
             f4.Show();
+            this.Hide();
         }
     }
 }
