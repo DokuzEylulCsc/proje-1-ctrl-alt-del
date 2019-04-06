@@ -23,27 +23,19 @@ namespace kelimelik
         public void OyunBaslat() // Hangi seviye secilirse o diziden eleman turetebılir hale getiren ve oyunu baslatan metot.
         {
             f2.Show();
+            
             f2.timer1.Start();
             if (Form1.hangi_buton == 1)
             {
-                for (int i = 0; i < 50; i++)
-                {
-                    secilen_seviye[i] = t.Kolay[i];
-                }
+                secilen_seviye = t.Kolay;
             }
             else if (Form1.hangi_buton == 2)
             {
-                for (int i = 0; i < 50; i++)
-                {
-                    secilen_seviye[i] = t.Orta[i];
-                }
+                secilen_seviye = t.Orta;
             }
             else if (Form1.hangi_buton == 3)
             {
-                for (int i = 0; i < 50; i++)
-                {
-                    secilen_seviye[i] = t.Zor[i];
-                }
+                secilen_seviye = t.Zor;
             }
             Random rastgele = new Random();
             int sayi = 0; 
@@ -51,8 +43,10 @@ namespace kelimelik
             for (int i = 0; i < 10; i++)
             {
                 secilen_kelimeler[i] = secilen_seviye[sayi];
-                sayi = rastgele.Next(0, 5) + sayi;
+                sayi = rastgele.Next(1,6) + sayi;
+                AI.Kelimeler[i] = secilen_kelimeler[i];
             }
+            Form1.oyuncu.YeniKelimeGetir();
         }
         public static void OyunKontrol(int sure_dakika,int sure_saniye)
         {

@@ -32,7 +32,7 @@ namespace kelimelik
             new Sozcuk("hapsetmek"),new Sozcuk("gecekondu"),new Sozcuk("sivrisinek"),new Sozcuk("yapıvermek"),new Sozcuk("gidedurmak"),new Sozcuk("düşeyazmak"),new Sozcuk("bilgisayar"),new Sozcuk("hacıyatmaz"),new Sozcuk("biçerdöver"),new Sozcuk("sivrisinek"),new Sozcuk("kültablası"),new Sozcuk("yastıkaltı"),
             new Sozcuk("çakmaktaşı")
         };
-
+        
         public Sozcuk[] Zor { get => zor; set => zor = value; }
         public Sozcuk[] Orta { get => orta; set => orta = value; }
         public Sozcuk[] Kolay { get => kolay; set => kolay = value; }

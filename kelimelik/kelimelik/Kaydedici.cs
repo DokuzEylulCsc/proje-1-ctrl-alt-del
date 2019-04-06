@@ -28,7 +28,7 @@ namespace kelimelik
         public static void LogYaz(int kacinciKelime , int KacTahmindeBildi , int KelimeKacHarfli, string zorlukSeviyesi)//bilinen kelimeler icin
         {
             EoF();
-            sw.WriteLine("! "+KelimeKacHarfli.ToString()+" Harfli "+zorlukSeviyesi+ " zorluktaki " +kacinciKelime.ToString()+".Kelime "+kacinciKelime.ToString()+" Tahminde Bilindi");
+            sw.WriteLine("! "+KelimeKacHarfli.ToString()+" Harfli "+zorlukSeviyesi+ " zorluktaki " +kacinciKelime.ToString()+".Kelime "+KacTahmindeBildi.ToString()+" Tahminde Bilindi");
             sw.WriteLine("");
             sw.Flush();
         }
@@ -44,6 +44,11 @@ namespace kelimelik
             sw.WriteLine("& "+ToplamTahminSayisi.ToString() + " tahminde oyun bitirildi ");
             sw.Flush();
         }//butun oyun boyunca yapilan tahmin sayisi 
+        public static void LogYaz(string a)
+        {
+            sw.WriteLine(a);
+            sw.Flush();
+        }
         public static double OyunBasinaOrtalamaTahminSayisi()
         {
             string[] temp1;
