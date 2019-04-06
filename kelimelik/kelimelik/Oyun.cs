@@ -10,8 +10,9 @@ namespace kelimelik
     {
         int i;
         static Form2 f2 = new Form2();
-        public Oyun(Form2 fo2)
+        public Oyun(Form2 fo2,string isim)
         {
+            Form1.oyuncu = new Oyuncu(isim, fo2);
             f2 = fo2;
         }
         private Sozcuk[] secilen_seviye = new Sozcuk[50];
@@ -56,32 +57,38 @@ namespace kelimelik
             {
                 f2.timer1.Stop();
                 OyunBitir();
-                MessageBox.Show("Canınız Kalmadı");   
-            }
-            if (sure_dakika + sure_saniye == 1)
-            {
-                f2.timer1.Stop();
-                OyunBitir();
-                MessageBox.Show("Sureniz Bitti");
+                MessageBox.Show("Canınız Kalmadı");
             }
             else
             {
-                sure_saniye--;
-                f2.Controls["label2"].Text = sure_saniye.ToString();
-                if (sure_saniye == 0)
+                if (sure_dakika + sure_saniye == 1)
                 {
-                    sure_dakika--;
-                    f2.Controls["label4"].Text = sure_dakika.ToString();
-                    sure_saniye = 59;
+                    f2.timer1.Stop();
+                    OyunBitir();
+                    MessageBox.Show("Sureniz Bitti");
+                }
+                else
+                {
+                    sure_saniye--;
                     f2.Controls["label2"].Text = sure_saniye.ToString();
+                    if (sure_saniye == 0)
+                    {
+                        sure_dakika--;
+                        f2.Controls["label4"].Text = sure_dakika.ToString();
+                        sure_saniye = 59;
+                        f2.Controls["label2"].Text = sure_saniye.ToString();
+                    }
                 }
             }
+            
         }
         public static void OyunBitir()
         {
             Form3 f3 = new Form3();
             f3.Show();
             f2.Close();
+            Kaydedici.StreamKapat();
+            
         }
         // AI da ki metodu burada cagırıp f2 gonderıcez metoda.
 

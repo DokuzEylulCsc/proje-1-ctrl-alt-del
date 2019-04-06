@@ -15,5 +15,12 @@ namespace kelimelik
         {
             InitializeComponent();
         }
+
+        private void Form4_Load(object sender, EventArgs e)
+        {
+            label12.Text = Kaydedici.ToplamOyunSayisi().ToString();
+            label13.Text =
+            label14.Text = Kaydedici.ToplamBilinenKelime().ToString();
+        }
     }
 }

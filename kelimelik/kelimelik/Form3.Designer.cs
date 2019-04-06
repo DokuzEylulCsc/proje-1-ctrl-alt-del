@@ -40,6 +40,7 @@
             this.Btn_Bitir.TabIndex = 0;
             this.Btn_Bitir.Text = "Bitir ve İstatistik Goster";
             this.Btn_Bitir.UseVisualStyleBackColor = true;
+            this.Btn_Bitir.Click += new System.EventHandler(this.Btn_Bitir_Click);
             // 
             // Btn_TekrarOyna
             // 
@@ -49,12 +50,13 @@
             this.Btn_TekrarOyna.TabIndex = 1;
             this.Btn_TekrarOyna.Text = "Tekrar Oyna";
             this.Btn_TekrarOyna.UseVisualStyleBackColor = true;
+            this.Btn_TekrarOyna.Click += new System.EventHandler(this.Btn_TekrarOyna_Click);
             // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(163)))), ((int)(((byte)(206)))));
             this.ClientSize = new System.Drawing.Size(272, 234);
             this.Controls.Add(this.Btn_TekrarOyna);
             this.Controls.Add(this.Btn_Bitir);

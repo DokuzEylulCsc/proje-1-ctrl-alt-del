@@ -6,7 +6,7 @@ namespace kelimelik
     class Kaydedici
     {
         static private string name = "PlaceHolder";
-        public static string N{ set => name = value; }
+        public static string N{ set => name = value; get => name; }
         static private string path;
        // static private int[] bilinenKelimeler = {0,0,0,0,0,0,0,0,0,0,0};//0.indis 2 harfliler 10.indis 12 harflilerden bilinenler
         static private FileStream fs;
@@ -122,7 +122,11 @@ namespace kelimelik
                 }
             }
         }//bilinen kelimeleri agirliklarina gore atar
-
+        public static void StreamKapat()
+        {
+            sw.Close();
+            sr.Close();
+        }
 
         public static void EoF()
         {
