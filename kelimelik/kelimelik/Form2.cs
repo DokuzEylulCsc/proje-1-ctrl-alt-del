@@ -163,5 +163,10 @@ namespace kelimelik
             if(Txt_Tahmin.Text!="")
             Form1.oyuncu.KelimeUygunluk(Txt_Tahmin.Text);
         }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

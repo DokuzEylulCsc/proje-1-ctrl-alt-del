@@ -81,6 +81,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -127,7 +129,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(299, 37);
+            this.label3.Location = new System.Drawing.Point(256, 37);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(56, 18);
             this.label3.TabIndex = 4;
@@ -136,7 +138,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(354, 37);
+            this.label4.Location = new System.Drawing.Point(311, 37);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(18, 18);
             this.label4.TabIndex = 5;
@@ -145,7 +147,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(524, 37);
+            this.label5.Location = new System.Drawing.Point(471, 37);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(47, 18);
             this.label5.TabIndex = 6;
@@ -154,7 +156,7 @@
             // pas
             // 
             this.pas.AutoSize = true;
-            this.pas.Location = new System.Drawing.Point(577, 37);
+            this.pas.Location = new System.Drawing.Point(524, 37);
             this.pas.Name = "pas";
             this.pas.Size = new System.Drawing.Size(18, 18);
             this.pas.TabIndex = 7;
@@ -521,7 +523,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(398, 37);
+            this.label2.Location = new System.Drawing.Point(355, 37);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(28, 18);
             this.label2.TabIndex = 47;
@@ -530,7 +532,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(378, 37);
+            this.label6.Location = new System.Drawing.Point(335, 37);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(14, 18);
             this.label6.TabIndex = 48;
@@ -583,6 +585,25 @@
             this.pictureBox3.TabIndex = 53;
             this.pictureBox3.TabStop = false;
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(602, 37);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(70, 18);
+            this.label12.TabIndex = 6;
+            this.label12.Text = "Seviye :";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(668, 37);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(60, 18);
+            this.label13.TabIndex = 7;
+            this.label13.Text = "Seviye";
+            this.label13.Click += new System.EventHandler(this.label13_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 18F);
@@ -632,7 +653,9 @@
             this.Controls.Add(this.Txt_Tahmin);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.pas);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -643,7 +666,7 @@
             this.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.Text = "KelimelerleDans";
             this.Shown += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -707,5 +730,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
     }
 }

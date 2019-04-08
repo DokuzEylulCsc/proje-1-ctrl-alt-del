@@ -37,7 +37,7 @@ namespace kelimelik
             {
                 if(GirilenKelime.Length != mevcutKelime.Length)
                 {
-                    throw new Exception("Kelime sayisi az");
+                    throw new Exception("Harf sayisi esit degil");
                 }
                 else
                 {
@@ -60,7 +60,16 @@ namespace kelimelik
                     MessageBox.Show("Harika , Dogru Bildin !");
                     f2.Controls["Txt_Tahmin"].Text = "";
                     ((ListBox)f2.Controls["listBox12"]).Items.Clear();
-                    YeniKelimeGetir();
+                    if (KacinciKelime < 9)
+                    {
+                        YeniKelimeGetir();
+                    }
+                    else
+                    {
+                        KacinciKelime++;
+                        f2.Controls["label13"].Text = KacinciKelime.ToString();
+                    }
+                    
                     Kaydedici.LogYaz("-Tahmin Yapildi");
 
                 }
@@ -174,33 +183,44 @@ namespace kelimelik
         }
         public void PasGec()
         {
-            int a = Convert.ToInt32(f2.Controls["pas"].Text);
-            if ( a > 0)
+            if (KacinciKelime < 9)
             {
-                f2.Controls["Txt_Tahmin"].Text = "";
-                a--;
-                f2.Controls["pas"].Text = a.ToString();
-                YeniKelimeGetir();
-                Kaydedici.LogYaz("Pas Gecildi");
-                Kaydedici.PasSayisi++;
+                int a = Convert.ToInt32(f2.Controls["pas"].Text);
+                if (a > 0)
+                {
+                    f2.Controls["Txt_Tahmin"].Text = "";
+                    a--;
+                    f2.Controls["pas"].Text = a.ToString();
+                    YeniKelimeGetir();
+                    Kaydedici.LogYaz("Pas Gecildi");
+                    Kaydedici.PasSayisi++;
+                }
+                else
+                {
+                    MessageBox.Show("Pas Hakkin Yok");
+                }
             }
             else
             {
-                MessageBox.Show("Pas Hakkin Yok");
+                MessageBox.Show("Zaten Son Kelimedesiniz");
             }
+          
             
         }
         public void YeniKelimeGetir()
         {
-
-            KacinciKelime++;
-            mevcutKelime = AI.Kelimeler[KacinciKelime].Kelime;
-            f2.Controls["Txt_Kelime"].Text = "";
-            f2.Controls["Txt_Kelime"].Text = mevcutKelime;
-            foreach(Control c in (f2.Controls).OfType<Button>())
+            if (KacinciKelime < 9)
             {
-                c.BackColor = Color.LightGray;
-            }
+                KacinciKelime++;
+                mevcutKelime = AI.Kelimeler[KacinciKelime].Kelime;
+                f2.Controls["Txt_Kelime"].Text = "";
+                f2.Controls["Txt_Kelime"].Text = mevcutKelime;
+                f2.Controls["label13"].Text = KacinciKelime.ToString();
+                foreach (Control c in (f2.Controls).OfType<Button>())
+                {
+                    c.BackColor = Color.LightGray;
+                }
+            }          
         }
 
     }

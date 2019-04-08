@@ -61,6 +61,11 @@ namespace kelimelik
                 f2.timer1.Stop();
                 OyunBitir();
                 MessageBox.Show("Canınız Kalmadı");
+            } else if (f2.Controls["label13"].Text=="10")
+            {
+                f2.timer1.Stop();
+                OyunBitir();
+                MessageBox.Show("Butun Hepsini Yedin Yuttun");
             }
             else
             {

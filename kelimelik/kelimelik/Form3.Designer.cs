@@ -63,7 +63,7 @@
             this.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.Name = "Form3";
-            this.Text = "Form3";
+            this.Text = "Tamam mi ? Devam mi?";
             this.ResumeLayout(false);
 
         }

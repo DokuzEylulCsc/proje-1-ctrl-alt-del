@@ -53,10 +53,9 @@ namespace kelimelik
                 {
                     kacOyunVar++;
                 }
-                else if (temp[0] == '&')
+                else if (temp[0] == '-')
                 {
-                    temp1 = temp.Split(' ');
-                    toplamTahmin += Convert.ToInt32(temp1[1]);
+                    toplamTahmin++;
                 }
                 temp = sr.ReadLine();
             }
@@ -132,6 +131,7 @@ namespace kelimelik
         {
             sw.Close();
             sr.Close();
+            fs.Close();
         }
         
 
